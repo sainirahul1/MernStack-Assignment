@@ -26,8 +26,7 @@ const eventSchema = new mongoose.Schema(
     },
     image: {
       type: String, // image URL (Cloudinary / local)
-       default:
-        "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80",
+      required: true
     },
     createdBy: {
       type: mongoose.Schema.Types.ObjectId,
